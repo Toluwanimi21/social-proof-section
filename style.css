@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verified: hsl(333, 80%, 67%);
+  --box-background: hsl(300, 43%, 22%);
+  --white: hsl(0, 0%, 100%);
+  --span_back: hsl(300, 24%, 96%);
+}
+
+body {
+  font-family: "league spartan", "san serif";
+}
+
+.page {
+  max-width: 800px;
+  margin: 30px auto;
+}
+/* first division */
+.review {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  display: block;
+  background-color: var(--span_back);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.details {
+  width: 200px;
+}
+
+.details h2 {
+  color: var(--box-background);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.a {
+  position: relative;
+}
+
+.details p {
+  font-size: 12px;
+}
+
+.one {
+  position: relative;
+  right: 80px;
+}
+
+.two {
+  position: relative;
+  right: 40px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  margin-top: 30px;
+}
+
+.box {
+  width: 380px;
+  height: 220px;
+  background-color: var(--box-background);
+  padding: 30px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.buyer-name {
+  color: var(--white);
+}
+
+.verified {
+  color: var(--verified);
+}
+.box-image {
+  display: flex;
+  align-content: center;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+.image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.text {
+  color: var(--white);
+  margin-top: 15px;
+}
+
+.box-one {
+  position: relative;
+  bottom: 10px;
+}
+
+.box-two {
+  position: relative;
+  top: 10px;
+}
+
+.box-three {
+  position: relative;
+  top: 20px;
+}
+
+.page {
+  padding: 50px;
+}
+
+/* .page {
+    width: 80%;
+    height: 100%;
+    border: 2px solid black;
+} */
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 640px) {
+  .review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .a {
+    position: unset;
+  }
+
+  .container {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box {
+    width: 250px;
+    height: 170px;
+    /* background-color: var(--box-background); */
+    /* padding: 20px; */
+    /* margin-right: 20px; */
+    /* border-radius: 10px; */
+  }
+}
